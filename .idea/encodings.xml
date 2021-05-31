@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/application/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/FirstController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/ModelType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/PredictController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/ProgressBar1Controller.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/ProgressBar2Controller.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/SecondController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/ThirdController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/fragment/VideoType.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
