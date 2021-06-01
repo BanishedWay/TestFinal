@@ -14,6 +14,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("智能监控视频异常检测系统");
+			primaryStage.setFullScreen(false);
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
