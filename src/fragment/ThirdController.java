@@ -51,7 +51,15 @@ public class ThirdController implements Initializable {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File file = directoryChooser.showDialog(new Stage());
         String path = file.toString();
-        String value = path.substring(path.lastIndexOf("\\") + 1);
+
+        String osName = System.getProperty("os.name", "");
+        String str = null;
+        if (osName.startsWith("Windows")) {
+            str = "\\";
+        } else {
+            str = "/";
+        }
+        String value = path.substring(path.lastIndexOf(str) + 1);
         VideoType videoType1 = new VideoType(value);
         list1.add(videoType1);
         videoColumn.setCellValueFactory(cellData -> cellData.getValue().getVideoProperty());
