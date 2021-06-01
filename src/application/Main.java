@@ -13,6 +13,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("/model/First.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
+			primaryStage.setTitle("智能监控视频异常检测系统");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();

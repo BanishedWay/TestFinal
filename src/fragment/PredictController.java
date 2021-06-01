@@ -33,8 +33,8 @@ public class PredictController implements Initializable {
 	@FXML
 	private TableView<ModelType> tableViewModel;
 
-	TableColumn<VideoType, String> videoColumn = new TableColumn<VideoType, String>("视频类型");
-	TableColumn<ModelType, String> modelColumn = new TableColumn<ModelType, String>("当前训练任务");
+	TableColumn<VideoType, String> videoColumn = new TableColumn<>("视频类型");
+	TableColumn<ModelType, String> modelColumn = new TableColumn<>("当前模型");
 
 	ObservableList<VideoType> list1 = FXCollections.observableArrayList();
 	ObservableList<ModelType> list2 = FXCollections.observableArrayList();

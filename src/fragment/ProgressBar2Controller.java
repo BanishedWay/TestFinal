@@ -30,12 +30,13 @@ public class ProgressBar2Controller implements Initializable {
 			for (int i = 0; i < 100; i++) {
 				progress_bar_2.setProgress(i / 100.0);
 				try {
-					Thread.sleep(30);
+					Thread.sleep(50);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
+			btn_close.setVisible(true);
 		}
 
 	}
@@ -48,6 +49,7 @@ public class ProgressBar2Controller implements Initializable {
 			Parent root = FXMLLoader.load(getClass().getResource("/model/Third.fxml"));
 			Scene scene = new Scene(root);
 			Stage stage = new Stage();
+			stage.setTitle("训练任务");
 			stage.setScene(scene);
 			stage.show();
 		} catch (IOException e) {
@@ -67,6 +69,7 @@ public class ProgressBar2Controller implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
+		btn_close.setVisible(false);
 		progress_bar_2.setProgress(0.0);
 
 	}
