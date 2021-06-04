@@ -31,7 +31,7 @@ public class FirstController implements Initializable {
         AnchorPane root = FXMLLoader.load(Main.class.getResource("/model/Second.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
-        stage.setTitle("开始训练");
+        stage.setTitle("发起训练");
         stage.setScene(scene);
         stage.show();
 
@@ -54,7 +54,7 @@ public class FirstController implements Initializable {
         Parent root = FXMLLoader.load(Main.class.getResource("/model/Predict.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
-        stage.setTitle("视频预测");
+        stage.setTitle("视频检测");
         stage.setScene(scene);
         stage.show();
     }

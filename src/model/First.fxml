@@ -14,14 +14,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="fragment.FirstController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fragment.FirstController">
     <AnchorPane>
         <effect>
             <Blend/>
         </effect>
-        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="267.0" prefHeight="24.0"
-               prefWidth="897.0" text="————————*智能监控视频异常检测系统*————————" textAlignment="CENTER" wrapText="true"
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="267.0" prefHeight="24.0" prefWidth="897.0"
+               text="——————*可信联邦学习监控视频异常检测系统*——————" textAlignment="CENTER" wrapText="true"
                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
                AnchorPane.topAnchor="0.0">
             <font>
@@ -34,8 +34,8 @@
     </AnchorPane>
     <AnchorPane prefHeight="200.0" prefWidth="200.0">
         <SplitPane dividerPositions="0.5" layoutX="-153.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT"
-                   prefHeight="272.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0"
-                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                   prefHeight="272.0" prefWidth="1050.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <ImageView pickOnBounds="true" SplitPane.resizableWithParent="false">
                 <viewport>
                     <Rectangle2D/>
@@ -43,11 +43,12 @@
                 <Image url="@/drawable/picture1.png"/>
             </ImageView>
             <AnchorPane SplitPane.resizableWithParent="false">
-                <TextArea editable="false" layoutX="7.0" layoutY="35.0" prefHeight="200.0"
-                          prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                <TextArea editable="false" layoutX="7.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0"
+                          text="可信联邦学习监控视频异常检测系统以联邦机器学习技术为基础，主要由视频上传处理、异常部分剥离、异常特征提取、联邦机器学习等四个模块组成，实现了对视频“异常行为”的检测和识别，在保护安防数据信息安全性的同时有效保证了训练数据源的多样性，对实现智能安防、视频监控异常行为检测报警提供了一种有效的技术手段。"
+                          wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <font>
-                        <Font name="DejaVuMathTeXGere-Regular" size="18.0"/>
+                        <Font size="23.0"/>
                     </font>
                 </TextArea>
             </AnchorPane>
@@ -79,18 +80,18 @@
     </SplitPane>
     <SplitPane dividerPositions="0.5" prefHeight="38.0" prefWidth="897.0">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-            <Button fx:id="btn1" layoutX="114.0" layoutY="3.0" mnemonicParsing="false"
-                    onAction="#event_start_train" text="发起训练" AnchorPane.bottomAnchor="0.0"
-                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Button fx:id="btn1" layoutX="114.0" layoutY="3.0" mnemonicParsing="false" onAction="#event_start_train"
+                    text="发起训练" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
                 <font>
                     <Font size="18.0"/>
                 </font>
             </Button>
         </AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-            <Button fx:id="btn2" layoutX="195.0" layoutY="7.0" mnemonicParsing="false"
-                    onAction="#event_join_train" text="参与训练" wrapText="true" AnchorPane.bottomAnchor="0.0"
-                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Button fx:id="btn2" layoutX="195.0" layoutY="7.0" mnemonicParsing="false" onAction="#event_join_train"
+                    text="参与训练" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <font>
                     <Font size="18.0"/>
                 </font>
@@ -98,7 +99,7 @@
         </AnchorPane>
     </SplitPane>
     <AnchorPane>
-        <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="————————预测————————" wrapText="true"
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="————————检测————————" wrapText="true"
                AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
                AnchorPane.topAnchor="0.0">
             <font>
@@ -125,7 +126,7 @@
     <SplitPane dividerPositions="0.5">
         <AnchorPane>
             <Button fx:id="btn3" mnemonicParsing="false" onAction="#event_start_predict" prefHeight="36.0"
-                    prefWidth="445.0" text="开始预测" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    prefWidth="445.0" text="开始检测" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
                     AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <font>
                     <Font size="18.0"/>
@@ -133,8 +134,8 @@
             </Button>
         </AnchorPane>
         <AnchorPane>
-            <Button mnemonicParsing="false" text="其他说明" AnchorPane.bottomAnchor="0.0"
-                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Button mnemonicParsing="false" text="其他说明" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <font>
                     <Font size="18.0"/>
                 </font>

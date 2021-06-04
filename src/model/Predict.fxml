@@ -79,9 +79,9 @@
 							prefHeight="160.0" prefWidth="100.0">
 					<Button fx:id="btnPredict" layoutX="50.0"
 						layoutY="13.0" mnemonicParsing="false"
-						onAction="#event_predict" text="开始预测"/>
+						onAction="#event_predict" text="开始检测"/>
 					<Button fx:id="btnCheck" layoutX="182.0" layoutY="13.0"
-						mnemonicParsing="false" onAction="#event_check" text="查看训练结果"/>
+						mnemonicParsing="false" onAction="#event_check" text="查看检测结果"/>
 				</AnchorPane>
 			</SplitPane>
 		</AnchorPane>
